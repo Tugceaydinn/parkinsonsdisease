@@ -18,6 +18,16 @@ It includes both **regression** (predicting `total_UPDRS`) and **binary classifi
 
 ---
 
+## Dataset
+
+- **Source:** [UCI Machine Learning Repository, Parkinson's Data Set](https://archive.ics.uci.edu/ml/datasets/parkinsons)
+- **Size:** 195 voice recordings from 32 people (24 with Parkinson's disease, 8 healthy), about six recordings per person
+- **Features:** 22 voice measurements (for example jitter, shimmer, HNR, RPDE, DFA, PPE)
+- **Target:** `status` (1 = Parkinson's, 0 = healthy)
+- **Class balance:** 147 of the 195 recordings (75.4%) are from people with Parkinson's, so always predicting "Parkinson's" already gives an accuracy of 0.754. Results should be compared with this baseline.
+- **Important:** Because each person contributes about six recordings, a random train/test split can put the same person in both sets and overstate performance. This project therefore also reports subject-aware cross-validation, where all recordings from one person stay in the same fold.
+- **Citation:** Little, M. A., et al. (2007). *Exploiting Nonlinear Recurrence and Fractal Scaling Properties for Voice Disorder Detection.* BioMedical Engineering OnLine. Check the exact reference on the UCI page before you commit.
+
 ## Project Structure
 
 parkinson-s-disease/
