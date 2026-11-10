@@ -1,11 +1,11 @@
-# 🧠 Parkinson’s Disease – UPDRS Regression & Classification
+# Parkinson’s Disease – UPDRS Regression & Classification
 
 This project focuses on **predicting and classifying Parkinson’s disease severity** using voice-derived features and machine learning models.  
 It includes both **regression** (predicting `total_UPDRS`) and **binary classification** (healthy vs patient) pipelines.
 
 ---
 
-## 📊 Project Overview
+## Project Overview
 
 - **Objective:** Predict UPDRS scores and classify Parkinson's severity  
 - **Dataset:** Parkinson’s dataset (e.g. from the [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/parkinsons))  
@@ -18,9 +18,9 @@ It includes both **regression** (predicting `total_UPDRS`) and **binary classifi
 
 ---
 
-## 🧰 Project Structure
+## Project Structure
 
-parkinson-s-disase/
+parkinson-s-disease/
 ├─ data/ # dataset goes here if shareable
 │ └─ README.md # link/instructions if data not included
 ├─ results/ # generated graphs & metrics
@@ -31,11 +31,11 @@ parkinson-s-disase/
 
 
 
-> ℹ️ `.gitkeep` is only used to keep the results folder visible in the repo.
+> `.gitkeep` is only used to keep the results folder visible in the repo.
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 1. **Clone the repo**
    ```bash
@@ -64,29 +64,29 @@ results/regression_test_mse.csv – regression results
 
 results/classification_metrics.csv – classification metrics
 
-🧪 Model Performance (Example)
+ Model Performance (Example)
 Model	Type	Metric	Score
 SVR	Regression	MSE ↓	91.71
 Random Forest	Regression	MSE ↓	184.66
 Logistic Regression	Classification	Acc ↑	0.87
 Random Forest	Classification	Acc ↑	0.91
 
-✅ In our tests, SVR achieved the lowest error for regression, and Random Forest provided the best classification accuracy.
+ In our tests, SVR achieved the lowest error for regression, and Random Forest provided the best classification accuracy.
 
-📈 Visualizations
+Visualizations
 
-📚 References
+ References
 UCI Parkinson’s Disease Dataset
 
 Little MA, McSharry PE, Hunter EJ, Spielman J, Ramig LO (2009).
 
-👩‍💻 Author
+ Author
 Tuğçe Aydın
-🎓 MSc Data & Computational Science @ UCD
-📍 Dublin, Ireland
+MSc Data & Computational Science @ UCD
+Dublin, Ireland
 LinkedIn · GitHub
 
-🌟 Future Work
+Future Work
 Hyperparameter tuning
 
 Exploring MLP / deep learning baselines
